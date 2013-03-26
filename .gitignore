@@ -1,0 +1,4 @@
+node_modules/
+static/js/dust-full-1.1.1.js
+npm-debug.log
+static/views/*dust

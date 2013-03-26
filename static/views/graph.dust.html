@@ -1,0 +1,51 @@
+<article class="graph">
+    <header>
+        {name}
+    </header>
+    {#path}
+        <article class="path">
+            <header>
+                Mission :
+            </header>
+            {start.value} ~~~&gt; {target.value}
+        </section>
+    {/path}
+    <section class="nodes">
+        <header>
+            Nodes :
+        </header>
+        <ul>
+            {#nodes}
+                <li>
+                    {value}
+                </li>
+            {/nodes}
+        </ul>
+    </section>
+    <section class="edges">
+        <header>
+            Edges :
+        </header>
+        <ul>
+            {#edges}
+                <li>
+                    {a.value}
+                    {~s}
+                    ---&gt;
+                    {~s}
+                    {b.value}
+                    {~s}
+                    [
+                    {weight}
+                    ]
+                </li>
+            {/edges}
+        </ul>
+    </section>
+    <section class="graphic" width="400" height="300">
+        <canvas>No support to draw it graphically.</canvas>
+        <div class="sigma"></div>
+    </section>
+    {.|js}
+</article>
+<hr/>
